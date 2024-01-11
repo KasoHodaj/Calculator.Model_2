@@ -18,11 +18,12 @@ body {
     overflow: hidden;
 }
 
-label{
+label {
     color: #fff;
     font-size: 1.5rem;
     max-width: 100%;
 }
+
 #screen {
     width: 100%;
     background-color: hsl(0, 0%, 20%);
@@ -33,14 +34,13 @@ label{
     color: #fff;
 }
 
-button{
-    
-    padding: 5px 10px;
-    font-size: 1.2rem;
+button {
+    padding: 10px 15px; 
+    font-size: 1rem; 
     font-weight: 500;
     display: inline-block;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px; 
     cursor: pointer;
     background-color: hsl(0, 0%, 30%);
     color: #ffffff;
@@ -51,52 +51,66 @@ button{
 button:hover {
     background-color: #191970;
 }
-button:active{
+
+button:active {
     background-color: #0a0a42;
 }
 
-.btn{
+.btn {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 5px;
-    
 }
 
-.extra{
+.extra {
     background-color: rgb(175, 19, 19);
 }
-.extra:hover{
-    background-color: rgb(122, 5, 5)
+
+.extra:hover {
+    background-color: rgb(122, 5, 5);
 }
-.extra:active{
+
+.extra:active {
     background-color: rgb(87, 4, 4);
 }
-.line{
+
+.line {
     background-color: hsl(0, 0%, 22%);
 }
-.operator{
+
+.operator {
     background-color: rgb(243, 174, 47);
 }
-.operator:hover{
+
+.operator:hover {
     background-color: rgb(190, 133, 27);
 }
-.operator:active{
+
+.operator:active {
     background-color: rgb(161, 111, 18);
 }
-.pi{
+
+.pi {
     background-color: rgb(94, 153, 6);
     font-style: italic;
     font-size: 1.5rem;
 }
-.pi:hover{
+
+.pi:hover {
     background-color: rgb(83, 136, 3);
 }
-.pi:active{
+
+.pi:active {
     background-color: rgb(62, 100, 4);
 }
 
-@media(max-width: 600px){
-    #container-calculator{
+@media (max-width: 600px) {
+    #container-calculator {
         width: 80%;
+    }
+
+    button {
+        font-size: 0.9rem; 
+        padding: 8px 12px; 
     }
 }
