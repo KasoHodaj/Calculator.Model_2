@@ -94,3 +94,9 @@ button:active{
 .pi:active{
     background-color: rgb(62, 100, 4);
 }
+
+@media(max-width: 600px){
+    #container-calculator{
+        width: 80%;
+    }
+}
