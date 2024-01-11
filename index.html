@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container-calculator" b>
+        <label for="text">Calculator.</label>
+        <input readonly id="screen" >
+        <div class="btn">
+            <button id="btn-buttons" class="line" onclick="percentage()">%</button>
+            <button id="btn-buttons" class="line" onclick="modular2()">MOD 2</button>
+            <button id="btn-buttons" class="extra" onclick="clearDisplay()">C</button>
+            <button id="btn-buttons" class="operator" onclick="deletePrevious()">DEL</button>
+            <button id="btn-buttons" class="line"onclick="updateDisplay('1/x')">1/x</button>
+            <button id="btn-buttons" class="line"onclick="updateDisplay('x^2')">x^2</button>
+            <button id="btn-buttons" class="line"onclick="updateDisplay('sqrt(x)')">sqrt(x)</button>
+            <button id="btn-buttons" class="operator" onclick="updateDisplay('/')">/</button>
+            <button id="btn-buttons" onclick="updateDisplay('7')">7</button>
+            <button id="btn-buttons" onclick="updateDisplay('8')">8</button>
+            <button id="btn-buttons" onclick="updateDisplay('9')">9</button>
+            <button id="btn-buttons" class="operator" onclick="updateDisplay('*')">*</button>
+            <button id="btn-buttons" onclick="updateDisplay('4')">4</button>
+            <button id="btn-buttons" onclick="updateDisplay('5')">5</button>
+            <button id="btn-buttons" onclick="updateDisplay('6')">6</button>
+            <button id="btn-buttons" class="operator" onclick="updateDisplay('-')">-</button>
+            <button id="btn-buttons" onclick="updateDisplay('1')">1</button>
+            <button id="btn-buttons" onclick="updateDisplay('2')">2</button>
+            <button id="btn-buttons" onclick="updateDisplay('3')">3</button>
+            <button id="btn-buttons" class="operator" onclick="updateDisplay('+')">+</button>
+            <button id="btn-buttons" onclick="updateDisplay('0')">0</button>
+            <button id="btn-buttons" onclick="updateDisplay('.')">.</button>
+            <button id="btn-buttons" onclick="calculate()">=</button>
+            <button id="btn-buttons" class="pi" onclick="toRad()">= Rad</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #a1a1a1ab;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container-calculator {
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 3px;
+    width: 20%;
+    overflow: hidden;
+}
+
+label{
+    color: #fff;
+    font-size: 1.5rem;
+    max-width: 100%;
+}
+#screen {
+    width: 100%;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    text-align: left;
+    padding: 10px;
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+button{
+    
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 30%);
+    color: #ffffff;
+    border: 1px solid #191970;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #191970;
+}
+button:active{
+    background-color: #0a0a42;
+}
+
+.btn{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    
+}
+
+.extra{
+    background-color: rgb(175, 19, 19);
+}
+.extra:hover{
+    background-color: rgb(122, 5, 5)
+}
+.extra:active{
+    background-color: rgb(87, 4, 4);
+}
+.line{
+    background-color: hsl(0, 0%, 22%);
+}
+.operator{
+    background-color: rgb(243, 174, 47);
+}
+.operator:hover{
+    background-color: rgb(190, 133, 27);
+}
+.operator:active{
+    background-color: rgb(161, 111, 18);
+}
+.pi{
+    background-color: rgb(94, 153, 6);
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.pi:hover{
+    background-color: rgb(83, 136, 3);
+}
+.pi:active{
+    background-color: rgb(62, 100, 4);
+}
